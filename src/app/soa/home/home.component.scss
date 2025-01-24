@@ -1,0 +1,20 @@
+.dishes-review {
+  p {
+    overflow: hidden;
+    /* position: relative; */
+    /* display: inline-block; */
+    /* margin: 0 5px 0 5px; */
+    /* text-align: center; */
+    /* text-decoration: none; */
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+.img-fluid {
+  width: 100%;
+}
+
+.banner-section {
+  height: 30%;
+}

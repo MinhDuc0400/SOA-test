@@ -1,0 +1,50 @@
+<!-- Footer -->
+<footer class="footer footer-seven footer-soa">
+    <!-- Footer Top -->
+    <div class="footer-top aos" data-aos="fade-up">
+        <div class="container">
+            <div class="footer-information flex-column flex-sm-row d-flex align-items-center justify-content-between">
+                <div class="company-information d-flex flex-column align-items-center align-items-sm-start text-white">
+                    <div>
+                        {{ address?.name }}
+                    </div>
+                    <div>
+                        {{ address?.phone }}
+                    </div>
+                    <div>{{address?.location}}</div>
+                </div>
+                <div class="footer-navigation grid text-white">
+                    <div class="text-center text-sm-end" *ngFor="let link of links">
+                        <a>{{link?.name}}</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Counter Section-->
+            <div class="footercount">
+                <div class="row d-flex align-items-center justify-content-between">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="vistors-details text-sm-start text-center text-white">
+                            <p>© {{ address?.name }} 2024</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="vistors-details">
+                            <div class="social-icon d-flex align-items-center justify-content-sm-end justify-content-center gap-3">
+                                <img src="assets/img/icons/soa-facebook.svg" alt="facebook">
+                                <img src="assets/img/icons/soa-instagram.svg" alt="instagram">
+                                <img src="assets/img/icons/soa-youtube.svg" alt="youtube">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Footer  Counter Section-->
+
+        </div>
+    </div>
+    <!-- /Footer Top -->
+
+</footer>
+<!-- /Footer -->

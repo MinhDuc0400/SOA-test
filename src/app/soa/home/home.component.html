@@ -1,0 +1,47 @@
+<app-header [headerMenu]="headerMenu"></app-header>
+<!-- Banner Section -->
+<section class="banner-section banner-seven">
+    <div class="container">
+        <div class="home-banner">
+        </div>
+    </div>
+</section>
+<!-- /Banner Section -->
+
+<!-- Restaurant Section -->
+<app-block
+        [title]="bloc_1?.title"
+        [subTitle]="bloc_1?.subtitle"
+>
+    <div class="col-lg-4 col-md-4 col-sm-12" *ngFor="let case of bloc_1?.cases">
+        <div class="dishes-box aos" data-aos="fade-up">
+            <div class="dishes-img">
+                <a href="#">
+                    <img src="assets/img/latest/Restaurant-1.jpg" class="img-fluid" alt="img">
+                </a>
+            </div>
+            <div class="dishes-content">
+                <div class="dishes-inner">
+                    <p class="title">{{case.category}}</p>
+                    <h5><a href="javascript:void(0);"> {{ case.cta }}</a></h5>
+                    <div class="dishes-review">
+                        <p> {{ case.description }}</p>
+                    </div>
+                </div>
+                <div class="dishes-footer search-btn">
+                    <button class="btn btn-primary" type="submit">{{ case.tagline }}
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</app-block>
+<!-- /Restaurant Section -->
+
+<!-- /Blog-section end -->
+<app-footer
+        [address]="address"
+        [links]="links"
+></app-footer>
+
